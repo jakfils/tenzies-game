@@ -1,8 +1,10 @@
-# React + Vite
+# Tenzi Game
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+This is a simple Tenzi game built with React. The goal of the game is to roll the dice until all ten dice show the same number. Players can freeze dice to keep their values between rolls.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Roll ten dice simultaneously
+- Click on a die to freeze/unfreeze it
+- Confetti explosion when all dice match
+- Restart the game with a new set of random values
