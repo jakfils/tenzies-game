@@ -8,3 +8,5 @@ This is a simple Tenzi game built with React. The goal of the game is to roll th
 - Click on a die to freeze/unfreeze it
 - Confetti explosion when all dice match
 - Restart the game with a new set of random values
+## Link
+https://tenzies-game-nine-nu.vercel.app/
