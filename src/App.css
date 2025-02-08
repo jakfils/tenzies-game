@@ -1,0 +1,82 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+main {
+  width: 500px;
+  height: 500px;
+  text-align: center;
+  background-color: #F5F5F5;
+  color: #242424;
+  padding: 10px;
+  border-radius: 10px;
+  display: flex;
+  justify-content: flex-start;
+  flex-direction: column;
+  align-items: center;
+
+}
+
+
+section {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 20px;
+  padding: 10px;
+}
+
+/* Conteneur des dés */
+.item {
+  position: relative;
+  cursor: pointer;
+  width: 50px;
+  /* Ajuste selon le besoin */
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Style de base des dés */
+.item img {
+  width: 100%;
+  height: auto;
+  transition: opacity 0.3s ease-in-out;
+  z-index: 2;
+}
+
+
+/* Superposition dorée */
+.isFreezed::before {
+  content: "";
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color: #EEBD1E;
+  /* Couleur dorée */
+  opacity: 0.8;
+  /* Ajustable */
+  border-radius: 15px;
+  /* Pour un effet plus doux */
+  pointer-events: none;
+  z-index: 1;
+  /* Empêche toute interaction avec l'overlay */
+}
+
+button {
+  background-color: #5035FF;
+  border: none;
+  padding: 5px 10px;
+  font-size: 1.2em;
+  margin-top: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
