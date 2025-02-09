@@ -43,7 +43,7 @@ function explosionConfetti() {
   });
 }
 
-function checkDice(dices) {
+function checkGameWon(dices) {
   return (
     dices.every((dice) => dice.value === dices[0].value) &&
     dices.every((dice) => dice.isFreezed)
@@ -91,7 +91,7 @@ function App() {
     });
   }
 
-  if (checkDice(dicesAll)) {
+  if (checkGameWon(dicesAll)) {
     explosionConfetti();
   }
 
@@ -117,7 +117,7 @@ function App() {
             </div>
           ))}
         </section>
-        {!checkDice(dicesAll) ? (
+        {!checkGameWon(dicesAll) ? (
           <button onClick={rollDice}>Roll dice</button>
         ) : (
           <button
